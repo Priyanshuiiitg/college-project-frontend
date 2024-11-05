@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start:pm2": "pm2 start npm --name college-project -- run dev"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.10",
