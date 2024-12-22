@@ -5,10 +5,10 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import img from '../../public/advise.png'
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  // { name: 'Product', href: '#' },
+  // { name: 'Features', href: '#' },
+  // { name: 'Marketplace', href: '#' },
+  // { name: 'Company', href: '#' },
 ]
 
 export default function Login() {
@@ -141,9 +141,8 @@ export default function Login() {
             <div className="mx-auto max-w-9xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    We’re changing the way people search.
-                  </h1>
+                  <h3 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                  Redefining Restaurant Discovery                                 </h3>
                   <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                   We are committed to offering an intuitive and personalized way for users to discover and explore restaurants. 
                   Our platform simplifies the decision-making process by providing tailored recommendations, ensuring that every dining experience is memorable.

@@ -10,6 +10,7 @@ const MapWithGeocoding = ({ places }) => {
     });
 
     useEffect(() => {
+        console.log(places)
         if (isLoaded && places.length) {
             const geocoder = new window.google.maps.Geocoder();
             const newMarkers = [];
@@ -22,11 +23,13 @@ const MapWithGeocoding = ({ places }) => {
                         const latLng = { lat: location.lat(), lng: location.lng() };
                         newMarkers.push(latLng);
 
-                        // When all places have been geocoded, update the markers and center
-                        if (newMarkers.length === places.length) {
+                        // When all geocoding attempts are complete, update markers and center
+                        if (newMarkers.length + index === places.length) {
                             setMarkers(newMarkers); // Set all marker positions
                             setCenter(newMarkers[0]); // Center the map on the first marker
                         }
+                    } else if (status === 'ZERO_RESULTS') {
+                        console.warn(`No results found for ${place}`);
                     } else {
                         console.error(`Geocoding failed for ${place}: ${status}`);
                     }
@@ -57,4 +60,3 @@ const MapWithGeocoding = ({ places }) => {
 };
 
 export default MapWithGeocoding;
-

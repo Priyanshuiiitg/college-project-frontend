@@ -49,7 +49,7 @@ export default function Sign() {
               {isMounted && ( // Render GoogleLogin only after the component has mounted
                 <GoogleLogin
                   onSuccess={(credentialResponse) => {
-
+                    localStorage.setItem('token',"true")
                     console.log(jwtDecode(credentialResponse?.credential || ""));
 router.push('/search')                    
                   }}
