@@ -10,7 +10,7 @@ const MapWithGeocoding = ({ places }) => {
     });
 
     useEffect(() => {
-        console.log(places)
+        // console.log(places)
         if (isLoaded && places.length) {
             const geocoder = new window.google.maps.Geocoder();
             const newMarkers = [];
@@ -49,6 +49,8 @@ const MapWithGeocoding = ({ places }) => {
                 center={center}
                 zoom={zoom}
                 mapContainerStyle={{ width: '100%', height: '100vh' }}
+                mapTypeId='hybrid'
+                
             >
                 {/* Render a marker for each geocoded position */}
                 {markers.map((position, index) => (

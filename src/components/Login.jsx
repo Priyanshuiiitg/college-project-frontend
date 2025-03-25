@@ -5,8 +5,8 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import img from '../../public/advise.png'
 const navigation = [
-  // { name: 'Product', href: '#' },
-  // { name: 'Features', href: '#' },
+  // { name: 'Search', href: '/search' },
+  // { name: 'Login', href: '/login' },
   // { name: 'Marketplace', href: '#' },
   // { name: 'Company', href: '#' },
 ]
