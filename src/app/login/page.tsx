@@ -4,7 +4,7 @@ import Sign from '@/components/Sign'
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import { useRouter } from 'next/navigation';
 
-const page = () => {
+const Page = () => {
   const router=useRouter();
   useEffect(()=>{
     if(localStorage.getItem('token')==='true')
@@ -19,4 +19,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

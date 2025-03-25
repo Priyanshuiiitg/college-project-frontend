@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import img from '../../public/advise.png'
+// import img from '../../public/advise.png'
 const navigation = [
   // { name: 'Search', href: '/search' },
   // { name: 'Login', href: '/login' },
