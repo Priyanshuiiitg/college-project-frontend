@@ -12,7 +12,7 @@ const Page = () => {
   })
   
   return (
-    <GoogleOAuthProvider clientId="514006376594-5di3ffrvp6dqoefcqbrr7umlgtninhga.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="352182692622-brvbg8nma4uenci0p46rlhlrvoegatob.apps.googleusercontent.com">
 
     <Sign></Sign>
     </GoogleOAuthProvider>
