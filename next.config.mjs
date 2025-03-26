@@ -21,7 +21,7 @@ const nextConfig = {
       return [
         {
           source: "/api/recommend",
-          destination: "https://34.55.214.192:8000/recommend", // Force HTTPS
+          destination: "http://34.55.214.192:8000/recommend", // Force HTTPS
         },
       ];
     },
