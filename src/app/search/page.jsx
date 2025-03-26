@@ -28,7 +28,7 @@ const Page = () => {
     }
 
     try {
-      const response = await fetch('http://34.55.214.192:8000/recommend', {
+      const response = await fetch('/api/recommend', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(requestData),
