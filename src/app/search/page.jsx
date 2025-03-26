@@ -28,7 +28,7 @@ const Page = () => {
     }
 
     try {
-      const response = await fetch('https://priyanshuapi.duckdns.org/', {
+      const response = await fetch('https://priyanshuapi.duckdns.org/recommend', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(requestData),
